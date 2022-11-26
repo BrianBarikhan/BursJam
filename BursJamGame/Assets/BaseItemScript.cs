@@ -41,9 +41,9 @@ public class BaseItemScript : MonoBehaviour
 
             bool activated = true;
 
-            foreach(GameObject gem in activatableItem)
+            foreach(GameObject item in activatableItem)
             {
-                if(!gem.activeInHierarchy)
+                if(!item.activeInHierarchy)
                 {
                     activated = false;
                     break;
