@@ -21,6 +21,7 @@ public class DialogueSystem : MonoBehaviour
     int numberOfFirstLines;
     int numberOfRepeatedLines;
     int currentBubble;
+    [SerializeField] GameObject player;
     [SerializeField] GameObject playerBubble;
     PlayerMovement pm;
     [SerializeField] GameObject characterBubble;
@@ -34,7 +35,7 @@ public class DialogueSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pm = GameObject.Find("Player").GetComponent<PlayerMovement>();
+        pm = player.GetComponent<PlayerMovement>();
         isStart = false;
         isTalking = false;
         isFirst = true;

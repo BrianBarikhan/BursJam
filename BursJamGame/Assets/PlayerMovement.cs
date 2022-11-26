@@ -6,11 +6,13 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float speed;
+    [SerializeField] GameObject playerSprite;
     Vector3 targetPosition;
     Vector3 mousePosition;
     Vector3 direction;
     bool isTargetSet;
     bool isTalking;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +32,15 @@ public class PlayerMovement : MonoBehaviour
             targetPosition.z = 0;
         }
         direction = targetPosition - gameObject.transform.position;
-        if(direction.magnitude > 1)
+        if (direction.x >= 0)
+        {
+            playerSprite.transform.eulerAngles = new Vector3(0, 0, 0);
+        }
+        else
+        {
+            playerSprite.transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+        if (direction.magnitude > 0.2f)
         {
             direction = direction.normalized;
             gameObject.transform.position += direction * speed * Time.deltaTime;
