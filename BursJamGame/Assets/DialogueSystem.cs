@@ -15,7 +15,7 @@ public class DialogueSystem : MonoBehaviour
     struct Dialogue
     {
         public ActiveCharacter characterTalking;
-        public string text;
+        [TextArea] public string text;
     }
 
     int numberOfFirstLines;
