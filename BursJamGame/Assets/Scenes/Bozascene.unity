@@ -354,7 +354,16 @@ MonoBehaviour:
   characterBubble: {fileID: 1613261950}
   playerText: {fileID: 704919350}
   characterText: {fileID: 773079786}
-  dialogue: []
+  firstDialogue:
+  - characterTalking: 0
+    text: '|Yo'
+  - characterTalking: 1
+    text: Wasaaaaap
+  - characterTalking: 0
+    text: fuck you
+  repeatedDialogue:
+  - characterTalking: 1
+    text: Dont talk to me
 --- !u!212 &838690157
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -681,7 +690,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1161035639
 Transform:
   m_ObjectHideFlags: 0
@@ -877,7 +886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1613261951
 Transform:
   m_ObjectHideFlags: 0
