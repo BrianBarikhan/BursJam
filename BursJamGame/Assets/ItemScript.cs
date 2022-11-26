@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ItemScript : MonoBehaviour
 {
     bool following = false;
     Vector2 initialPos;
+    PlayerMovement pm;
     // Start is called before the first frame update
     void Start()
     {
+        pm = GameObject.Find("Player").GetComponent<PlayerMovement>();
         initialPos = transform.position;
     }
 
@@ -33,5 +36,11 @@ public class ItemScript : MonoBehaviour
     private void OnMouseDown()
     {
         following = true;
+        pm.setCanMove(false);
+    }
+
+    private void OnMouseUp()
+    {
+        pm.setCanMove(true);
     }
 }

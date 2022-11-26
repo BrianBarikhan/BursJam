@@ -12,10 +12,12 @@ public class PlayerMovement : MonoBehaviour
     Vector3 direction;
     bool isTargetSet;
     bool isTalking;
+    bool canMove;
 
     // Start is called before the first frame update
     void Start()
     {
+        canMove = true;
         targetPosition = Vector3.zero;
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition); ;
         direction = Vector3.zero;
@@ -25,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)&&!isTalking)
+        if (Input.GetMouseButtonDown(0)&&!isTalking&&canMove)
         {
             mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             targetPosition = mousePosition;
@@ -43,6 +45,10 @@ public class PlayerMovement : MonoBehaviour
         if (direction.magnitude > 0.2f)
         {
             direction = direction.normalized;
+            if (!canMove)
+            {
+                direction = Vector3.zero;
+            }
             gameObject.transform.position += direction * speed * Time.deltaTime;
         }
     }
@@ -55,5 +61,10 @@ public class PlayerMovement : MonoBehaviour
     public void setIsTalking(bool value)
     {
         isTalking = value;
+    }
+
+    public void setCanMove(bool value)
+    {
+        canMove = value;
     }
 }

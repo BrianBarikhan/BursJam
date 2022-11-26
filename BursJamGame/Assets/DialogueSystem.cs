@@ -10,73 +10,84 @@ public class DialogueSystem : MonoBehaviour
         player,
         npc
     }
-
     [System.Serializable]
     struct Dialogue
     {
         public ActiveCharacter characterTalking;
         [TextArea] public string text;
     }
+    [System.Serializable]
+    struct Dialogues
+    {
+        public Dialogue[] firstDialogue;
+        public Dialogue[] repeatedDialogue;
+        public string requiredItem;
+        public GameObject rewardItem;
+    }
 
     int numberOfFirstLines;
     int numberOfRepeatedLines;
     int currentBubble;
+    [SerializeField] GameObject InventorySystem;
     [SerializeField] GameObject player;
     [SerializeField] GameObject playerBubble;
     PlayerMovement pm;
     [SerializeField] GameObject characterBubble;
     [SerializeField] TextMesh playerText;
     [SerializeField] TextMesh characterText;
-    [SerializeField] Dialogue[] firstDialogue;
-    [SerializeField] Dialogue[] repeatedDialogue;
+    [SerializeField] Dialogues[] dialogues;
     bool isStart;
     bool isTalking;
     bool isFirst;
+    int dialogueNum;
+    GameObject givenItem;
+    BaseItemScript bis;
     // Start is called before the first frame update
     void Start()
     {
+        dialogueNum = 0;
         pm = player.GetComponent<PlayerMovement>();
         isStart = false;
         isTalking = false;
         isFirst = true;
-        numberOfFirstLines = firstDialogue.Length;
-        numberOfRepeatedLines = repeatedDialogue.Length;
         currentBubble = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        numberOfFirstLines = dialogues[dialogueNum].firstDialogue.Length;
+        numberOfRepeatedLines = dialogues[dialogueNum].repeatedDialogue.Length;
         if (isStart)
         {
             if (isFirst)
             {
-                if (firstDialogue[currentBubble].characterTalking == ActiveCharacter.npc)
+                if (dialogues[dialogueNum].firstDialogue[currentBubble].characterTalking == ActiveCharacter.npc)
                 {
                     characterBubble.SetActive(true);
                     playerBubble.SetActive(false);
-                    characterText.text = firstDialogue[currentBubble].text;
+                    characterText.text = dialogues[dialogueNum].firstDialogue[currentBubble].text;
                 }
-                else if (firstDialogue[currentBubble].characterTalking == ActiveCharacter.player)
+                else if (dialogues[dialogueNum].firstDialogue[currentBubble].characterTalking == ActiveCharacter.player)
                 {
                     characterBubble.SetActive(false);
                     playerBubble.SetActive(true);
-                    playerText.text = firstDialogue[currentBubble].text;
+                    playerText.text = dialogues[dialogueNum].firstDialogue[currentBubble].text;
                 }
             }
             else
             {
-                if (repeatedDialogue[currentBubble].characterTalking == ActiveCharacter.npc)
+                if (dialogues[dialogueNum].repeatedDialogue[currentBubble].characterTalking == ActiveCharacter.npc)
                 {
                     characterBubble.SetActive(true);
                     playerBubble.SetActive(false);
-                    characterText.text = repeatedDialogue[currentBubble].text;
+                    characterText.text = dialogues[dialogueNum].repeatedDialogue[currentBubble].text;
                 }
-                else if (repeatedDialogue[currentBubble].characterTalking == ActiveCharacter.player)
+                else if (dialogues[dialogueNum].repeatedDialogue[currentBubble].characterTalking == ActiveCharacter.player)
                 {
                     characterBubble.SetActive(false);
                     playerBubble.SetActive(true);
-                    playerText.text = repeatedDialogue[currentBubble].text;
+                    playerText.text = dialogues[dialogueNum].repeatedDialogue[currentBubble].text;
                 }
             }
 
@@ -87,6 +98,12 @@ public class DialogueSystem : MonoBehaviour
                 {
                     if(currentBubble == numberOfFirstLines)
                     {
+                        if (dialogues[dialogueNum].rewardItem != null)
+                        {
+                            InventoryManager im = InventorySystem.GetComponent<InventoryManager>();
+                            Transform parent = im.AddItem(dialogues[dialogueNum].rewardItem);
+                            Instantiate(dialogues[dialogueNum].rewardItem, parent);
+                        }
                         isStart = false;
                         currentBubble = 0;
                         characterBubble.SetActive(false);
@@ -120,12 +137,40 @@ public class DialogueSystem : MonoBehaviour
         isTalking = true;
     }
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (isTalking)
+        if (isTalking && collision.transform.tag == "Player")
         {
             isStart = true;
             pm.setIsTalking(true);
+        }
+        else if(collision.transform.tag == "Item")
+        {
+            givenItem = collision.gameObject;
+            bis = givenItem.GetComponent<BaseItemScript>();
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "Item")
+        {
+            if (Input.GetMouseButtonUp(0))
+            {
+                if (bis.GetName() == dialogues[dialogueNum].requiredItem)
+                {
+                    dialogueNum++;
+                    isFirst = true;
+                    Destroy(givenItem);
+                    pm.setCanMove(true);
+                }
+                else
+                {
+                    givenItem = null;
+                    bis = null;
+                }
+            }
         }
     }
 }
