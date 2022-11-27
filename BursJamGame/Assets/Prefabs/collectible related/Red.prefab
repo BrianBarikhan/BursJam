@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7818187006376085025}
   - component: {fileID: 5018862385519871676}
   - component: {fileID: 8857121757366867280}
-  - component: {fileID: -8101382580250276951}
+  - component: {fileID: -8116374703977303304}
   m_Layer: 0
   m_Name: Red
   m_TagString: Item
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 100
   m_Sprite: {fileID: 21300000, guid: 7dfdfbeb676f32e4ebe63a467e58d4b6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -103,7 +103,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.52, y: 0.52}
     oldSize: {x: 19.2, y: 10.8}
     newSize: {x: 1, y: 0.5}
     adaptiveTilingThreshold: 0.5
@@ -137,7 +137,7 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-8101382580250276951
+--- !u!114 &-8116374703977303304
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,6 +146,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9077034842471511600}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3685048c3d1bc24fb948fbce4d1c1d1, type: 3}
+  m_Script: {fileID: 11500000, guid: ca4f7fcf2ac7c914688150a3a56ed974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 9077034842471511600, guid: fa1772076de0e654e9af0c4f47506fa0, type: 3}

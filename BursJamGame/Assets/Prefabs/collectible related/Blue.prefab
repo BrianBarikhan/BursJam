@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6908172683968209920}
   - component: {fileID: 1038268420152019454}
   - component: {fileID: 4415173512537325348}
-  - component: {fileID: 6262907892749262896}
+  - component: {fileID: -3265670263582928491}
   m_Layer: 0
   m_Name: Blue
   m_TagString: Item
@@ -103,7 +103,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.52, y: 0.5}
     oldSize: {x: 19.2, y: 10.8}
     newSize: {x: 1, y: 0.5}
     adaptiveTilingThreshold: 0.5
@@ -137,7 +137,7 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6262907892749262896
+--- !u!114 &-3265670263582928491
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,6 +146,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1001029083316727218}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3685048c3d1bc24fb948fbce4d1c1d1, type: 3}
+  m_Script: {fileID: 11500000, guid: ca4f7fcf2ac7c914688150a3a56ed974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 1001029083316727218, guid: 487e690893817554ea601523bd800162, type: 3}

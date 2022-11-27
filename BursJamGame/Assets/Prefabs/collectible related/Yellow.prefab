@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1907035173325413632}
   - component: {fileID: 849645440329755649}
   - component: {fileID: -1578737769411763884}
-  - component: {fileID: -2714351178079015415}
   - component: {fileID: 3316382231367129699}
+  - component: {fileID: -5284193126830709953}
   m_Layer: 0
   m_Name: Yellow
   m_TagString: Item
@@ -104,7 +104,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.52, y: 0.52}
     oldSize: {x: 19.2, y: 10.8}
     newSize: {x: 1, y: 0.5}
     adaptiveTilingThreshold: 0.5
@@ -138,18 +138,6 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-2714351178079015415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5996139749150564645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3685048c3d1bc24fb948fbce4d1c1d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3316382231367129699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,3 +150,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb16819edef5c84f8f365a5595abf37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-5284193126830709953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996139749150564645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca4f7fcf2ac7c914688150a3a56ed974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 5996139749150564645, guid: a820f6f98df061a47bdfd485e5414342, type: 3}
