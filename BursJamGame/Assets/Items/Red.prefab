@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 9077034842471511600}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -103,7 +103,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.52, y: 0.52}
     oldSize: {x: 19.2, y: 10.8}
     newSize: {x: 1, y: 0.5}
     adaptiveTilingThreshold: 0.5
@@ -112,10 +112,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 0.25}
-      - {x: -0.5, y: 0}
-      - {x: 0, y: -0.25}
-      - {x: 0.5, y: 0}
+    - - {x: 0.5287943, y: -0.7654767}
+      - {x: 0.7199116, y: -0.14924002}
+      - {x: 0.5329876, y: 0.58848286}
+      - {x: -0.017561913, y: 0.86466765}
+      - {x: -0.56204414, y: 0.5365591}
+      - {x: -0.7107439, y: -0.28099108}
+      - {x: -0.38636303, y: -0.93491554}
+      - {x: 0.0785141, y: -1.0712781}
 --- !u!50 &8857121757366867280
 Rigidbody2D:
   serializedVersion: 4
