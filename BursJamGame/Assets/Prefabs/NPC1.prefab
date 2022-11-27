@@ -305,7 +305,41 @@ MonoBehaviour:
     rewardItem: {fileID: 0}
   - firstDialogue:
     - characterTalking: 0
-      text: "I have found this strange \ncoin,"
+      text: I have found this strange coin,
+    - characterTalking: 0
+      text: 'and was wondering if I could
+
+        trade it for anything? '
+    - characterTalking: 1
+      text: "You know as well as I do that I do \nnot care if the coin is peculiar
+        or not\r\n"
+    - characterTalking: 1
+      text: "On this island, we only care about the \nweight of the silver.\n"
+    - characterTalking: 1
+      text: "But let me see\u2026 This coin comes all \nthe way from Constantinople\u2026\n"
+    - characterTalking: 1
+      text: "I wonder how it got here\u2026 It might be \nfrom Stavard\u2019s treasure\u2026\n"
+    - characterTalking: 1
+      text: "Anyway, it isn\u2019t worth much on its own, \nbut you can get this
+        KNIFE BLADE,"
+    - characterTalking: 1
+      text: "if you can combine it with a handle, it \ncould make a great SHAVING
+        TOOL.  "
+    - characterTalking: 1
+      text: "Just drag one item from your inventory into \nanother to combine them!   "
+    - characterTalking: 0
+      text: "Wait, aren\u2019t you going to develop the \ntreasure story?"
+    - characterTalking: 1
+      text: "Of course not! I\u2019m a merchant! Everything I \nhave, you get at
+        a price!"
+    - characterTalking: 0
+      text: Name your price, merchant.
+    - characterTalking: 1
+      text: "You will have to give me 14 \nOUNCES OF SILVER."
+    - characterTalking: 1
+      text: "I do not care in which form this silver \ncomes from. "
+    - characterTalking: 0
+      text: "Fine, I will come back to you with \nthe silver."
     repeatedDialogue:
     - characterTalking: 1
       text: Have you found enough silver?
@@ -344,8 +378,8 @@ MonoBehaviour:
 
         to bring to me, farmer? '
     requiredItem:
-    - 
-    - 
+    - bracelet
+    - ring
     rewardItem: {fileID: 0}
   - firstDialogue:
     - characterTalking: 1
