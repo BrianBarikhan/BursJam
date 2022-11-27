@@ -1628,20 +1628,44 @@ PrefabInstance:
       value: NPC2
       objectReference: {fileID: 0}
     - target: {fileID: 7580431504396539227, guid: afb37cf5c44b0f243897887b71ead428, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580431504396539227, guid: afb37cf5c44b0f243897887b71ead428, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580431504396539227, guid: afb37cf5c44b0f243897887b71ead428, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.79999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580431504396539227, guid: afb37cf5c44b0f243897887b71ead428, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.72
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7580431504396539227, guid: afb37cf5c44b0f243897887b71ead428, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7580431504396539227, guid: afb37cf5c44b0f243897887b71ead428, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580431504396539228, guid: afb37cf5c44b0f243897887b71ead428, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3c6282e087f9786438680aeffd42d221, type: 3}
+    - target: {fileID: 7580431504396539229, guid: afb37cf5c44b0f243897887b71ead428, type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 3c6282e087f9786438680aeffd42d221, type: 3}
     - target: {fileID: 7580431504396539229, guid: afb37cf5c44b0f243897887b71ead428, type: 3}
       propertyPath: m_Text
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7580431504396539229, guid: afb37cf5c44b0f243897887b71ead428, type: 3}
       propertyPath: m_FontSize
-      value: 100
+      value: 44
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afb37cf5c44b0f243897887b71ead428, type: 3}
@@ -10514,6 +10538,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5172521815489126266, guid: 8c9d5e44626d40f4898e19e3f0985c31, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3c6282e087f9786438680aeffd42d221, type: 3}
+    - target: {fileID: 5172521815489126267, guid: 8c9d5e44626d40f4898e19e3f0985c31, type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 3c6282e087f9786438680aeffd42d221, type: 3}
+    - target: {fileID: 5172521815489126267, guid: 8c9d5e44626d40f4898e19e3f0985c31, type: 3}
+      propertyPath: m_FontSize
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172521815489126269, guid: 8c9d5e44626d40f4898e19e3f0985c31, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172521815489126269, guid: 8c9d5e44626d40f4898e19e3f0985c31, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172521815489126269, guid: 8c9d5e44626d40f4898e19e3f0985c31, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.79999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172521815489126269, guid: 8c9d5e44626d40f4898e19e3f0985c31, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172521815489126269, guid: 8c9d5e44626d40f4898e19e3f0985c31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172521815489126269, guid: 8c9d5e44626d40f4898e19e3f0985c31, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5172521816392741137, guid: 8c9d5e44626d40f4898e19e3f0985c31, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -10582,6 +10642,42 @@ PrefabInstance:
     - target: {fileID: 6603684573264999656, guid: ea177ffc245ab2c4f91d9f3fabbcd7c7, type: 3}
       propertyPath: m_SortingOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6603684574102018690, guid: ea177ffc245ab2c4f91d9f3fabbcd7c7, type: 3}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 3c6282e087f9786438680aeffd42d221, type: 3}
+    - target: {fileID: 6603684574102018690, guid: ea177ffc245ab2c4f91d9f3fabbcd7c7, type: 3}
+      propertyPath: m_FontSize
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 6603684574102018691, guid: ea177ffc245ab2c4f91d9f3fabbcd7c7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3c6282e087f9786438680aeffd42d221, type: 3}
+    - target: {fileID: 6603684574102018692, guid: ea177ffc245ab2c4f91d9f3fabbcd7c7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 6603684574102018692, guid: ea177ffc245ab2c4f91d9f3fabbcd7c7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 6603684574102018692, guid: ea177ffc245ab2c4f91d9f3fabbcd7c7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.79999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 6603684574102018692, guid: ea177ffc245ab2c4f91d9f3fabbcd7c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6603684574102018692, guid: ea177ffc245ab2c4f91d9f3fabbcd7c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6603684574102018692, guid: ea177ffc245ab2c4f91d9f3fabbcd7c7, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6603684574637260035, guid: ea177ffc245ab2c4f91d9f3fabbcd7c7, type: 3}
       propertyPath: m_Name
