@@ -108,62 +108,37 @@ MonoBehaviour:
   characterText: {fileID: 5172521815489126267}
   dialogues:
   - firstDialogue:
-    - characterTalking: 1
-      text: Greetings farmer!
     - characterTalking: 0
-      text: 'Greetings! '
+      text: "There, there little one. What has you in \nsuch a foul mood?"
+    - characterTalking: 1
+      text: "My necklace! It\u2019s broken! The beads are\neverywhere! I can\u2019t
+        find them!"
+    - characterTalking: 1
+      text: "My necklace! It\u2019s broken! The beads are\neverywhere! I can\u2019t
+        find them!"
+    - characterTalking: 1
+      text: "My parents gave me this bracelet to console \nme, but it\u2019s just
+        gray! And it\u2019s too big!\r"
+    - characterTalking: 0
+      text: "Don't worry, I can help you find your \nnecklace. "
     repeatedDialogue:
     - characterTalking: 1
-      text: 'Have you found anything of interest
-
-        today? '
-    requiredItem: coin
+      text: Did you find my necklace?
+    requiredItem:
+    - necklace
     rewardItem: {fileID: 0}
   - firstDialogue:
     - characterTalking: 0
-      text: "I have found this strange \ncoin,"
-    - characterTalking: 0
-      text: "and was wondering if \nyou could trade it for anything?"
+      text: 'Here you go little one. '
     - characterTalking: 1
-      text: "You know as well as I do that \nI do not care if the coin is peculiar
-        or not\r\n"
+      text: "Thank you stranger! Here\u2019s for you, \nsince you were so nice!"
     - characterTalking: 1
-      text: "On this island, we only care \nabout the weight of the silver"
-    - characterTalking: 1
-      text: "But let me see\u2026 This coin comes \nall the way from Constantinople\u2026"
-    - characterTalking: 1
-      text: "I wonder how it got here\u2026 \nIt might be from Stavard\u2019s treasure\u2026 "
-    - characterTalking: 1
-      text: "Anyway, it isn\u2019t worth much on its own, \nbut you can get this
-        KNIFE BLADE"
-    - characterTalking: 1
-      text: "with the right handle it could make \na great SHAVING TOOL"
-    - characterTalking: 0
-      text: "Wait, aren\u2019t you going to develop \nthe treasure story?"
-    - characterTalking: 1
-      text: "Of course not! I\u2019m a merchant! \nEverything I have, you get at
-        a price!\r\n"
-    - characterTalking: 0
-      text: Name your price, merchant.
-    - characterTalking: 1
-      text: "You will have to give me \n14 OUNCES OF SILVER."
-    - characterTalking: 0
-      text: "Fine, I will come back to you with \nthe silver"
+      text: 'It was too big for me anyway! '
     repeatedDialogue:
     - characterTalking: 1
-      text: THREAD.
-    requiredItem: 
-    rewardItem: {fileID: 5273670168699563577, guid: 89a8b844fa41c9e4eb3361a1497edff5, type: 3}
-  - firstDialogue:
-    - characterTalking: 0
-      text: there ya go dude
-    - characterTalking: 1
-      text: thanks
-    repeatedDialogue:
-    - characterTalking: 1
-      text: go away
-    requiredItem: 
-    rewardItem: {fileID: 9077034842471511600, guid: fa1772076de0e654e9af0c4f47506fa0, type: 3}
+      text: 'Do you like your bracelet?  '
+    requiredItem: []
+    rewardItem: {fileID: 3395810350673723407, guid: df9f850c00e12734d98345dddf3b9953, type: 3}
 --- !u!61 &5172521815047223550
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -177,7 +152,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.23696661, y: -1.3920258}
+  m_Offset: {x: -0.09326458, y: 0.91634965}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -188,7 +163,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.7847414, y: 3.7840517}
+  m_Size: {x: 2.635128, y: 2.4132342}
   m_EdgeRadius: 0
 --- !u!61 &5172521815047223521
 BoxCollider2D:
@@ -203,7 +178,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.24234724, y: 0}
+  m_Offset: {x: -0.0028443336, y: -0.92208564}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -214,7 +189,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.4653053, y: 5.63}
+  m_Size: {x: 1.6509962, y: 2.0614092}
   m_EdgeRadius: 0
 --- !u!1 &5172521815489126264
 GameObject:
