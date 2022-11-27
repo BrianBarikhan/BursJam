@@ -25,8 +25,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6603684573264999446}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: -4.11, y: 4.35, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1.2057568}
+=======
+  m_LocalPosition: {x: -2.9, y: 3.4, z: 0}
+  m_LocalScale: {x: -1, y: 1.25, z: 0}
+>>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6603684574102018692}
@@ -74,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac7a0c8e0f92f014babd0e909a77eb80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -110,9 +115,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6603684574102018689}
+<<<<<<< Updated upstream
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 0.04838024, y: 0.04838024, z: 0.04838024}
+=======
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3, y: 1.1999997, z: 0}
+  m_LocalScale: {x: -0.1, y: 0.1, z: 0}
+>>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6603684573264999447}
@@ -178,7 +189,7 @@ TextMesh:
   m_FontSize: 44
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 0}
+  m_Font: {fileID: 12800000, guid: 3c6282e087f9786438680aeffd42d221, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
@@ -301,7 +312,8 @@ MonoBehaviour:
         today? '
     - characterTalking: 1
       text: "Just drag it from your inventory \nand drop it to me! "
-    requiredItem: []
+    requiredItem:
+    - coin
     rewardItem: {fileID: 0}
   - firstDialogue:
     - characterTalking: 0
@@ -350,7 +362,8 @@ MonoBehaviour:
 
         It may come in handy!'
     requiredItem:
-    - coin
+    - bracelet
+    - ring
     rewardItem: {fileID: 5273670168699563577, guid: 89a8b844fa41c9e4eb3361a1497edff5, type: 3}
   - firstDialogue:
     - characterTalking: 0
@@ -438,7 +451,11 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
+<<<<<<< Updated upstream
   m_Offset: {x: -0.011485338, y: -0.18232298}
+=======
+  m_Offset: {x: -0.011485338, y: -0.13082409}
+>>>>>>> Stashed changes
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -449,7 +466,11 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
+<<<<<<< Updated upstream
   m_Size: {x: 3.715363, y: 5.943654}
+=======
+  m_Size: {x: 3.715363, y: 5.8406563}
+>>>>>>> Stashed changes
   m_EdgeRadius: 0
 --- !u!61 &6603684574637260056
 BoxCollider2D:
