@@ -24,7 +24,7 @@ public class ItemScript : MonoBehaviour
         }
         else
         {
-            transform.position = initialPos;
+            transform.position = transform.parent.position;
         }
 
         if (Input.GetMouseButtonUp(0))
