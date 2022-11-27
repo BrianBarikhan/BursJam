@@ -138,7 +138,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3c6282e087f9786438680aeffd42d221, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -178,7 +178,7 @@ TextMesh:
   m_FontSize: 44
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 0}
+  m_Font: {fileID: 12800000, guid: 3c6282e087f9786438680aeffd42d221, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
@@ -290,62 +290,90 @@ MonoBehaviour:
   characterText: {fileID: 8955236102790343180}
   dialogues:
   - firstDialogue:
-    - characterTalking: 1
-      text: Greetings farmer!
     - characterTalking: 0
-      text: 'Greetings! '
-    repeatedDialogue:
+      text: By the Sun! What is this?!
     - characterTalking: 1
-      text: 'Have you found anything of interest
+      text: "I am the ghost of Stavard, conqueror of \nmany riches!"
+    - characterTalking: 1
+      text: And you shall not dig out my treasure,
+    - characterTalking: 1
+      text: "for you and your lineage will be cursed \nif you do so!"
+    - characterTalking: 0
+      text: I do not care for your blasted curse!
+    - characterTalking: 0
+      text: "What bad can a malediction do when you \nare showered in riches?"
+    - characterTalking: 1
+      text: "Do you have no sympathy for the fate of \nyour bloodline?"
+    - characterTalking: 1
+      text: "Do you believe they would wish to be cursed \nby your greed?"
+    - characterTalking: 1
+      text: "Do you believe they would wish to be cursed \nby your greed?"
+    - characterTalking: 0
+      text: ...
+    - characterTalking: 0
+      text: ...You have a point...
+    - characterTalking: 0
+      text: "But tell me, what good does a ghost get \nfrom a treasure?"
+    - characterTalking: 1
+      text: I wish to be remembered through the ages!
+    - characterTalking: 1
+      text: I want my treasure to inspire countless tales!
+    - characterTalking: 1
+      text: "I want the next twenty generations to say \nmy name in reverence!"
+    - characterTalking: 1
+      text: "What mystery does a treasure hold, were it \nto be dug out so soon?
+        \r\n"
+    - characterTalking: 1
+      text: '... ! '
+    - characterTalking: 1
+      text: "Say, farmer, would you be interested in a deal? \r\n"
+    - characterTalking: 0
+      text: " \rPray tell?\n"
+    - characterTalking: 1
+      text: 'What if your lineage was to unearth my
 
-        today? '
-    requiredItem: coin
-    rewardItem: {fileID: 0}
-  - firstDialogue:
+        treasure, twenty generations
+        down the line?
+
+'
+    - characterTalking: 1
+      text: 'What if your lineage was to unearth my
+
+        treasure, twenty generations
+        down the line?
+
+'
+    - characterTalking: 1
+      text: "And so will your blood, for it will have unearthed\nStavard\u2019s legendary
+        treasure!\n"
     - characterTalking: 0
-      text: "I have found this strange \ncoin,"
+      text: 'Hmm...
+
+
+'
     - characterTalking: 0
-      text: "and was wondering if \nyou could trade it for anything?"
-    - characterTalking: 1
-      text: "You know as well as I do that \nI do not care if the coin is peculiar
-        or not\r\n"
-    - characterTalking: 1
-      text: "On this island, we only care \nabout the weight of the silver"
-    - characterTalking: 1
-      text: "But let me see\u2026 This coin comes \nall the way from Constantinople\u2026"
-    - characterTalking: 1
-      text: "I wonder how it got here\u2026 \nIt might be from Stavard\u2019s treasure\u2026 "
-    - characterTalking: 1
-      text: "Anyway, it isn\u2019t worth much on its own, \nbut you can get this
-        KNIFE BLADE"
-    - characterTalking: 1
-      text: "with the right handle it could make \na great SHAVING TOOL"
+      text: 'Fine. We have a deal then. My bloodline shall
+
+        be famous! And
+        so will your name!
+
+
+'
     - characterTalking: 0
-      text: "Wait, aren\u2019t you going to develop \nthe treasure story?"
+      text: 'May you spend a peaceful afterlife, Stavard
+
+
+'
     - characterTalking: 1
-      text: "Of course not! I\u2019m a merchant! \nEverything I have, you get at
-        a price!\r\n"
-    - characterTalking: 0
-      text: Name your price, merchant.
-    - characterTalking: 1
-      text: "You will have to give me \n14 OUNCES OF SILVER."
-    - characterTalking: 0
-      text: "Fine, I will come back to you with \nthe silver"
-    repeatedDialogue:
-    - characterTalking: 1
-      text: THREAD.
-    requiredItem: 
-    rewardItem: {fileID: 5273670168699563577, guid: 89a8b844fa41c9e4eb3361a1497edff5, type: 3}
-  - firstDialogue:
-    - characterTalking: 0
-      text: there ya go dude
-    - characterTalking: 1
-      text: thanks
+      text: 'And may you have a good life, farmer!
+
+
+'
     repeatedDialogue:
     - characterTalking: 1
       text: go away
-    requiredItem: 
-    rewardItem: {fileID: 9077034842471511600, guid: fa1772076de0e654e9af0c4f47506fa0, type: 3}
+    requiredItem: []
+    rewardItem: {fileID: 0}
 --- !u!61 &8955236103241813385
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -359,7 +387,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.23696661, y: -1.3920258}
+  m_Offset: {x: 0.2589121, y: 0.042479992}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -370,7 +398,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.7847414, y: 3.7840517}
+  m_Size: {x: 8.460169, y: 9.770017}
   m_EdgeRadius: 0
 --- !u!61 &8955236103241813398
 BoxCollider2D:
@@ -385,7 +413,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.24234724, y: 0}
+  m_Offset: {x: 0.023302317, y: -0.99175715}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -396,5 +424,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.4653053, y: 5.63}
+  m_Size: {x: 6.892795, y: 7.6135144}
   m_EdgeRadius: 0
