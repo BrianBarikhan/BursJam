@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ItemScript : MonoBehaviour
 {
+    public Vector3 offset;
     bool following = false;
     Vector2 initialPos;
     PlayerMovement pm;
@@ -24,7 +25,7 @@ public class ItemScript : MonoBehaviour
         }
         else
         {
-            transform.position = transform.parent.position;
+            transform.position = transform.parent.position + offset;
         }
 
         if (Input.GetMouseButtonUp(0))
