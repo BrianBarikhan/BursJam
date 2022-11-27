@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] GameObject playerSprite;
+    [SerializeField] Animator animator;
     Vector3 targetPosition;
     Vector3 mousePosition;
     Vector3 direction;
@@ -42,6 +43,9 @@ public class PlayerMovement : MonoBehaviour
         {
             playerSprite.transform.eulerAngles = new Vector3(0, 180, 0);
         }
+
+        animator.SetFloat("direction", direction.magnitude);
+
         if (direction.magnitude > 0.2f)
         {
             direction = direction.normalized;
@@ -50,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
                 direction = Vector3.zero;
             }
             gameObject.transform.position += direction * speed * Time.deltaTime;
+            
         }
     }
 

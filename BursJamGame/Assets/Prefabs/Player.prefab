@@ -50,6 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   playerSprite: {fileID: 8953680436783876506}
+  animator: {fileID: 8290300181050327860}
 --- !u!61 &8953680436365401192
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -107,6 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8953680436783876519}
   - component: {fileID: 8953680436783876504}
+  - component: {fileID: 8290300181050327860}
   m_Layer: 0
   m_Name: PlayerSprite
   m_TagString: Untagged
@@ -181,6 +183,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &8290300181050327860
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8953680436783876506}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8853797f92812ed449a6d1ad733e2667, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8953680437115826034
 GameObject:
   m_ObjectHideFlags: 0
