@@ -299,53 +299,98 @@ MonoBehaviour:
       text: 'Have you found anything of interest
 
         today? '
-    requiredItem: coin
+    - characterTalking: 1
+      text: "Just drag it from your inventory \nand drop it to me! "
+    requiredItem: []
     rewardItem: {fileID: 0}
   - firstDialogue:
     - characterTalking: 0
       text: "I have found this strange \ncoin,"
-    - characterTalking: 0
-      text: "and was wondering if \nyou could trade it for anything?"
-    - characterTalking: 1
-      text: "You know as well as I do that \nI do not care if the coin is peculiar
-        or not\r\n"
-    - characterTalking: 1
-      text: "On this island, we only care \nabout the weight of the silver"
-    - characterTalking: 1
-      text: "But let me see\u2026 This coin comes \nall the way from Constantinople\u2026"
-    - characterTalking: 1
-      text: "I wonder how it got here\u2026 \nIt might be from Stavard\u2019s treasure\u2026 "
-    - characterTalking: 1
-      text: "Anyway, it isn\u2019t worth much on its own, \nbut you can get this
-        KNIFE BLADE"
-    - characterTalking: 1
-      text: "with the right handle it could make \na great SHAVING TOOL"
-    - characterTalking: 0
-      text: "Wait, aren\u2019t you going to develop \nthe treasure story?"
-    - characterTalking: 1
-      text: "Of course not! I\u2019m a merchant! \nEverything I have, you get at
-        a price!\r\n"
-    - characterTalking: 0
-      text: Name your price, merchant.
-    - characterTalking: 1
-      text: "You will have to give me \n14 OUNCES OF SILVER."
-    - characterTalking: 0
-      text: "Fine, I will come back to you with \nthe silver"
     repeatedDialogue:
     - characterTalking: 1
-      text: THREAD.
-    requiredItem: 
+      text: Have you found enough silver?
+    - characterTalking: 1
+      text: "Remember that you can combine \ntwo items in your inventory by "
+    - characterTalking: 1
+      text: 'dragging one into the other!
+
+        It may come in handy!'
+    requiredItem:
+    - coin
     rewardItem: {fileID: 5273670168699563577, guid: 89a8b844fa41c9e4eb3361a1497edff5, type: 3}
   - firstDialogue:
     - characterTalking: 0
-      text: there ya go dude
+      text: 'Here merchant, I have brought
+
+        the silver you requested '
     - characterTalking: 1
-      text: thanks
+      text: 'Let me weigh it down... '
+    - characterTalking: 1
+      text: '... '
+    - characterTalking: 1
+      text: '... '
+    - characterTalking: 1
+      text: 'I am afraid that you are short
+
+        of a few ounces, farmer'
+    - characterTalking: 1
+      text: 'You will have to find something
+
+        else to tip the scale in your
+        favor'
     repeatedDialogue:
     - characterTalking: 1
-      text: go away
-    requiredItem: 
-    rewardItem: {fileID: 9077034842471511600, guid: fa1772076de0e654e9af0c4f47506fa0, type: 3}
+      text: 'Do you have something else
+
+        to bring to me, farmer? '
+    requiredItem:
+    - 
+    - 
+    rewardItem: {fileID: 0}
+  - firstDialogue:
+    - characterTalking: 1
+      text: "Ah! I see you have brought me \nall the silver I requested.\r\n"
+    - characterTalking: 1
+      text: "I will then tell you Stavard\u2019s story.\n"
+    - characterTalking: 1
+      text: "A few generations before ours there \nwas a warrior named Stavard.\n"
+    - characterTalking: 1
+      text: "He had amassed great wealth in his \nmany journeys.\n"
+    - characterTalking: 1
+      text: "One day, he and his men were \nattacked by Norwegians,"
+    - characterTalking: 1
+      text: "and Stavard had to flee to this town, where \nhe is said to have buried
+        his treasure."
+    - characterTalking: 1
+      text: "After setting anchor here, Stavard and his \nmen traveled to the South
+        of Gotland,\r\n"
+    - characterTalking: 1
+      text: "to fight the Norwegians, but all who fought \nperished on that day.\r\n"
+    - characterTalking: 1
+      text: "It is said Stavard buried his treasure at the tip \nof a shadow cast
+        by a stone at dawn,\n"
+    - characterTalking: 1
+      text: "north of this town. \n"
+    - characterTalking: 0
+      text: "Thank you merchant, \n"
+    - characterTalking: 0
+      text: 'I will make sure you are rewarded once I am
+
+        showered in Stavard''s
+        riches. '
+    - characterTalking: 1
+      text: "Do you truly believe these legends?\r"
+    - characterTalking: 0
+      text: " I believe there is little to lose in believing \nfrom time to time. "
+    - characterTalking: 1
+      text: "You are a foolish man, farmer, but I still \nwish you a good life."
+    - characterTalking: 1
+      text: You too, merchant!
+    repeatedDialogue:
+    - characterTalking: 1
+      text: Have a good life, farmer!
+    requiredItem: []
+    rewardItem: {fileID: 0}
 --- !u!61 &6603684574637260039
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -359,7 +404,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.23696661, y: -1.3920258}
+  m_Offset: {x: -0.011485338, y: 0.93216753}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -370,7 +415,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.7847414, y: 3.7840517}
+  m_Size: {x: 3.715363, y: 3.714673}
   m_EdgeRadius: 0
 --- !u!61 &6603684574637260056
 BoxCollider2D:
@@ -385,7 +430,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.24234724, y: 0}
+  m_Offset: {x: -0.05155492, y: -0.8932538}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -396,5 +441,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.4653053, y: 5.63}
+  m_Size: {x: 2.84689, y: 3.8434925}
   m_EdgeRadius: 0

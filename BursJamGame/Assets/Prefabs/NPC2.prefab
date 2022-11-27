@@ -202,7 +202,7 @@ MonoBehaviour:
       text: 'Have you found anything of interest
 
         today? '
-    requiredItem: coin
+    requiredItem: []
     rewardItem: {fileID: 0}
   - firstDialogue:
     - characterTalking: 0
@@ -237,7 +237,7 @@ MonoBehaviour:
     repeatedDialogue:
     - characterTalking: 1
       text: THREAD.
-    requiredItem: 
+    requiredItem: []
     rewardItem: {fileID: 5273670168699563577, guid: 89a8b844fa41c9e4eb3361a1497edff5, type: 3}
   - firstDialogue:
     - characterTalking: 0
@@ -247,7 +247,7 @@ MonoBehaviour:
     repeatedDialogue:
     - characterTalking: 1
       text: go away
-    requiredItem: 
+    requiredItem: []
     rewardItem: {fileID: 9077034842471511600, guid: fa1772076de0e654e9af0c4f47506fa0, type: 3}
 --- !u!61 &7580431504138138328
 BoxCollider2D:
@@ -262,7 +262,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.23696661, y: -1.3920258}
+  m_Offset: {x: -0.23696661, y: 0.7587199}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -273,7 +273,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.7847414, y: 3.7840517}
+  m_Size: {x: 3.7847414, y: 3.3677778}
   m_EdgeRadius: 0
 --- !u!61 &7580431504138138311
 BoxCollider2D:
@@ -288,7 +288,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.24234724, y: 0}
+  m_Offset: {x: -0.24234724, y: -0.8325468}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -299,7 +299,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.4653053, y: 5.63}
+  m_Size: {x: 2.4653053, y: 3.9649067}
   m_EdgeRadius: 0
 --- !u!1 &7580431504396539230
 GameObject:
