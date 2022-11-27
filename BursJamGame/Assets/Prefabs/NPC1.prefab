@@ -111,9 +111,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6603684574102018689}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.3, z: 0}
-  m_LocalScale: {x: -0.01, y: 0.01, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 3, y: 1, z: 0}
+  m_LocalScale: {x: -0.08, y: 0.08, z: 0.79999995}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6603684573264999447}
   m_RootOrder: 0
@@ -301,7 +301,8 @@ MonoBehaviour:
         today? '
     - characterTalking: 1
       text: "Just drag it from your inventory \nand drop it to me! "
-    requiredItem: []
+    requiredItem:
+    - coin
     rewardItem: {fileID: 0}
   - firstDialogue:
     - characterTalking: 0
@@ -350,7 +351,8 @@ MonoBehaviour:
 
         It may come in handy!'
     requiredItem:
-    - coin
+    - bracelet
+    - ring
     rewardItem: {fileID: 5273670168699563577, guid: 89a8b844fa41c9e4eb3361a1497edff5, type: 3}
   - firstDialogue:
     - characterTalking: 0
