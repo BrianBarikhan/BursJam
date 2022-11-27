@@ -21,7 +21,7 @@ public class DialogueSystem : MonoBehaviour
     {
         public Dialogue[] firstDialogue;
         public Dialogue[] repeatedDialogue;
-        public string requiredItem;
+        public string[] requiredItem;
         public GameObject rewardItem;
     }
 
@@ -158,18 +158,18 @@ public class DialogueSystem : MonoBehaviour
         {
             if (Input.GetMouseButtonUp(0))
             {
-                if (bis.GetName() == dialogues[dialogueNum].requiredItem)
-                {
-                    dialogueNum++;
-                    isFirst = true;
-                    Destroy(givenItem);
-                    pm.setCanMove(true);
+                for(int i = 0; i < dialogues[dialogueNum].requiredItem.Length; i++) {
+                    if (bis.GetName() == dialogues[dialogueNum].requiredItem[i])
+                    {
+                        dialogueNum++;
+                        isFirst = true;
+                        Destroy(givenItem);
+                        pm.setCanMove(true);
+                        return;
+                    }
                 }
-                else
-                {
-                    givenItem = null;
-                    bis = null;
-                }
+                givenItem = null;
+                bis = null;
             }
         }
     }
