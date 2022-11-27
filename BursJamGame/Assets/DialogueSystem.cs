@@ -145,7 +145,7 @@ public class DialogueSystem : MonoBehaviour
             isStart = true;
             pm.setIsTalking(true);
         }
-        else if(collision.transform.tag == "Item")
+        else if(collision.gameObject.tag == "Item")
         {
             givenItem = collision.gameObject;
             bis = givenItem.GetComponent<BaseItemScript>();
@@ -154,10 +154,12 @@ public class DialogueSystem : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.transform.tag == "Item")
+        if (collision.gameObject.tag == "Item")
         {
+            Debug.Log("Collided");
             if (Input.GetMouseButtonUp(0))
             {
+                Debug.Log("Drop");
                 for(int i = 0; i < dialogues[dialogueNum].requiredItem.Length; i++) {
                     if (bis.GetName() == dialogues[dialogueNum].requiredItem[i])
                     {
