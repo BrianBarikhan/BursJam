@@ -33,19 +33,26 @@ public class PlayerMovement : MonoBehaviour
             mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             targetPosition = mousePosition;
             targetPosition.z = 0;
+
+            direction = targetPosition - gameObject.transform.position;
+
+            if (direction.x >= 0)
+            {
+                playerSprite.transform.eulerAngles = new Vector3(0, 0, 0);
+            }
+            else
+            {
+                playerSprite.transform.eulerAngles = new Vector3(0, 180, 0);
+            }
         }
+
         direction = targetPosition - gameObject.transform.position;
-        if (direction.x >= 0)
-        {
-            playerSprite.transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-        else
-        {
-            playerSprite.transform.eulerAngles = new Vector3(0, 180, 0);
-        }
 
         animator.SetFloat("direction", direction.magnitude);
+    }
 
+    private void FixedUpdate()
+    {
         if (direction.magnitude > 0.2f)
         {
             direction = direction.normalized;
@@ -53,8 +60,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 direction = Vector3.zero;
             }
-            gameObject.transform.position += direction * speed * Time.deltaTime;
-            
+            gameObject.transform.position += direction * speed * Time.fixedDeltaTime;
         }
     }
 

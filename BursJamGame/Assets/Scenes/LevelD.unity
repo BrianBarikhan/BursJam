@@ -1619,6 +1619,10 @@ PrefabInstance:
       propertyPath: InventorySystem
       value: 
       objectReference: {fileID: 957298400}
+    - target: {fileID: 7580431504138138331, guid: afb37cf5c44b0f243897887b71ead428, type: 3}
+      propertyPath: dialogues.Array.data[1].rewardItem
+      value: 
+      objectReference: {fileID: 5687888316823477936, guid: 7cac66f4e94ede348bbaea6122289984, type: 3}
     - target: {fileID: 7580431504138138332, guid: afb37cf5c44b0f243897887b71ead428, type: 3}
       propertyPath: m_Name
       value: NPC2
@@ -10462,6 +10466,10 @@ PrefabInstance:
       propertyPath: InventorySystem
       value: 
       objectReference: {fileID: 957298400}
+    - target: {fileID: 5172521815047223549, guid: 8c9d5e44626d40f4898e19e3f0985c31, type: 3}
+      propertyPath: dialogues.Array.data[1].rewardItem
+      value: 
+      objectReference: {fileID: 758895223965460412, guid: 75ce46edc3fb0d341b8befb9d2629b73, type: 3}
     - target: {fileID: 5172521815047223551, guid: 8c9d5e44626d40f4898e19e3f0985c31, type: 3}
       propertyPath: m_RootOrder
       value: 4
